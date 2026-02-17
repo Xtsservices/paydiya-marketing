@@ -2,7 +2,7 @@ import { motion, AnimatePresence } from 'motion/react';
 import { Menu, X, ChevronDown, CreditCard, Smartphone, Volume2, Receipt } from 'lucide-react';
 import { useState } from 'react';
 import { Link } from 'react-router';
-import logo from "@/assets/logo.png";
+import logo from "../../assets/logo.png";
 
 export function Header() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);

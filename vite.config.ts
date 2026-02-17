@@ -9,12 +9,6 @@ export default defineConfig({
     react(),
     tailwindcss(),
   ],
-  resolve: {
-    alias: {
-      // Alias @ to the src directory
-      '@': './src',
-    },
-  },
 
   // Fix for crypto.getRandomValues error
   define: {
