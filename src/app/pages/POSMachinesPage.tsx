@@ -1,6 +1,6 @@
 import { motion } from 'motion/react';
 import { Smartphone, Wifi, Battery, CreditCard, QrCode, CheckCircle2, Zap, Shield, Clock, Package, TrendingUp, Store } from 'lucide-react';
-import posImage from "../../assets/9108242b6e4b0a93aa0aa18e5dd79a50b948038d.png";
+import posImage from "../../assets/pos-machine.png";
 
 export function POSMachinesPage() {
   const features = [

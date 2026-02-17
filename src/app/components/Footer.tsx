@@ -1,6 +1,6 @@
 import { motion } from 'motion/react';
 import { Mail, Phone, MapPin, Facebook, Twitter, Linkedin, Instagram, ArrowRight } from 'lucide-react';
-import logo from "../../assets/9aefceaa80ce77af4fbdb1644040cb32c9952b85.png";
+import logo from "../../assets/logo.png";
 
 export function Footer() {
   const footerLinks = {

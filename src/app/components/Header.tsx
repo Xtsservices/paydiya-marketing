@@ -2,7 +2,7 @@ import { motion, AnimatePresence } from 'motion/react';
 import { Menu, X, ChevronDown, CreditCard, Smartphone, Volume2, Receipt } from 'lucide-react';
 import { useState } from 'react';
 import { Link } from 'react-router';
-import logo from "../../assets/9aefceaa80ce77af4fbdb1644040cb32c9952b85.png";
+import logo from "@/assets/logo.png";
 
 export function Header() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
@@ -65,11 +65,11 @@ export function Header() {
       transition={{ duration: 0.6 }}
     >
       <nav className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex items-center justify-between h-20">
+        <div className="flex items-center justify-between h-16 sm:h-20">
           {/* Logo */}
           <Link to="/">
             <motion.div 
-              className="flex items-center gap-3 cursor-pointer"
+              className="flex items-center gap-2 sm:gap-3 cursor-pointer"
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
             >
@@ -77,16 +77,16 @@ export function Header() {
                 whileHover={{ rotate: 360 }}
                 transition={{ duration: 0.6 }}
               >
-                <img src={logo} alt="Paydiya" className="w-10 h-10" />
+                <img src={logo} alt="Paydiya" className="w-8 h-8 sm:w-10 sm:h-10" />
               </motion.div>
-              <span className="text-2xl font-extrabold bg-gradient-to-r from-emerald-600 to-teal-600 bg-clip-text text-transparent">
+              <span className="text-xl sm:text-2xl font-extrabold bg-gradient-to-r from-emerald-600 to-teal-600 bg-clip-text text-transparent">
                 Paydiya
               </span>
             </motion.div>
           </Link>
 
           {/* Desktop Navigation */}
-          <div className="hidden md:flex items-center gap-8">
+          <div className="hidden lg:flex items-center gap-6 xl:gap-8">
             {navLinks.map((link, index) => (
               <motion.div
                 key={link.name}
@@ -107,13 +107,17 @@ export function Header() {
                       <ChevronDown className="w-4 h-4" />
                     </motion.div>
                   </div>
-                ) : (
+                ) : link.path ? (
                   <Link
                     to={link.path}
                     className="flex items-center gap-1 text-gray-700 hover:text-emerald-600 transition-colors font-semibold"
                   >
                     {link.name}
                   </Link>
+                ) : (
+                  <div className="flex items-center gap-1 text-gray-700 hover:text-emerald-600 transition-colors font-semibold cursor-pointer">
+                    {link.name}
+                  </div>
                 )}
                 <motion.div
                   className="absolute bottom-0 left-0 h-0.5 bg-gradient-to-r from-emerald-600 to-teal-600 w-0 group-hover:w-full transition-all duration-300"
@@ -124,7 +128,7 @@ export function Header() {
                   <AnimatePresence>
                     {solutionsOpen && (
                       <motion.div
-                        className="absolute top-full left-0 mt-2 w-80 bg-white rounded-2xl shadow-2xl border border-gray-100 overflow-hidden"
+                        className="absolute top-full left-0 mt-2 w-72 lg:w-80 bg-white rounded-2xl shadow-2xl border border-gray-100 overflow-hidden z-50"
                         initial={{ opacity: 0, y: -10, scale: 0.95 }}
                         animate={{ opacity: 1, y: 0, scale: 1 }}
                         exit={{ opacity: 0, y: -10, scale: 0.95 }}
@@ -181,16 +185,16 @@ export function Header() {
           </div>
 
           {/* CTA Buttons */}
-          <div className="hidden md:flex items-center gap-4">
+          <div className="hidden md:flex items-center gap-3 lg:gap-4">
             <motion.button 
-              className="text-emerald-600 hover:text-emerald-700 transition-colors font-semibold px-4 py-2"
+              className="text-emerald-600 hover:text-emerald-700 transition-colors font-semibold px-3 lg:px-4 py-2 text-sm lg:text-base"
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
             >
               Sign In
             </motion.button>
             <motion.button 
-              className="relative bg-gradient-to-r from-emerald-600 to-teal-600 text-white px-6 py-3 rounded-xl font-semibold overflow-hidden group shadow-lg"
+              className="relative bg-gradient-to-r from-emerald-600 to-teal-600 text-white px-4 lg:px-6 py-2 lg:py-3 rounded-xl font-semibold overflow-hidden group shadow-lg text-sm lg:text-base"
               whileHover={{ scale: 1.05, boxShadow: "0 10px 30px rgba(16, 185, 129, 0.3)" }}
               whileTap={{ scale: 0.95 }}
             >
@@ -206,7 +210,7 @@ export function Header() {
 
           {/* Mobile Menu Button */}
           <motion.button
-            className="md:hidden p-2 rounded-lg hover:bg-gray-100 transition-colors"
+            className="lg:hidden p-2 rounded-lg hover:bg-gray-100 transition-colors"
             onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
             whileTap={{ scale: 0.9 }}
           >
@@ -240,7 +244,7 @@ export function Header() {
         <AnimatePresence>
           {mobileMenuOpen && (
             <motion.div 
-              className="md:hidden border-t border-gray-200 bg-white/95 backdrop-blur-lg"
+              className="lg:hidden border-t border-gray-200 bg-white/95 backdrop-blur-lg"
               initial={{ height: 0, opacity: 0 }}
               animate={{ height: "auto", opacity: 1 }}
               exit={{ height: 0, opacity: 0 }}
@@ -306,10 +310,10 @@ export function Header() {
                 </div>
 
                 {/* Other Nav Links */}
-                {navLinks.slice(1).map((link, index) => (
+                {navLinks.slice(1).filter(link => link.path).map((link, index) => (
                   <Link
                     key={link.name}
-                    to={link.path}
+                    to={link.path!}
                   >
                     <motion.div
                       className="flex items-center justify-between text-gray-700 hover:text-emerald-600 hover:bg-emerald-50 transition-colors py-3 px-4 rounded-lg font-semibold"
