@@ -85,7 +85,7 @@ export function CTASection() {
         transition={{ duration: 20, repeat: Infinity, ease: "linear" }}
       />
 
-      <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 text-center relative z-10">
+      <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 text-left relative z-10">
         <motion.div
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -118,7 +118,7 @@ export function CTASection() {
 
           {/* Sub-text */}
           <motion.p 
-            className="text-xl sm:text-2xl text-white/90 mb-10 leading-relaxed"
+            className="text-xl sm:text-2xl text-white/90 mb-10 leading-relaxed max-w-2xl"
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
@@ -129,7 +129,7 @@ export function CTASection() {
 
           {/* Benefits List */}
           <motion.div 
-            className="flex flex-wrap justify-center gap-6 mb-10"
+            className="flex flex-wrap justify-start gap-6 mb-10"
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}

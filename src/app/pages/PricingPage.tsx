@@ -176,7 +176,7 @@ export function PricingPage() {
           />
         </div>
 
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 text-center">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 text-left">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
@@ -199,13 +199,13 @@ export function PricingPage() {
               </span>
             </h1>
 
-            <p className="text-xl sm:text-2xl text-gray-600 max-w-3xl mx-auto mb-10 leading-relaxed">
+            <p className="text-xl sm:text-2xl text-gray-600 max-w-3xl mb-10 leading-relaxed">
               Start with zero setup fees. Scale as you grow. <br />
               <span className="font-semibold text-emerald-600">All plans include bank-grade security and 24/7 support.</span>
             </p>
 
             {/* Trust Indicators Mini */}
-            <div className="flex flex-wrap justify-center gap-6 mb-8">
+            <div className="flex flex-wrap justify-start gap-6 mb-8">
               {["No Hidden Charges", "Cancel Anytime", "Instant Activation"].map((item, index) => (
                 <motion.div
                   key={index}

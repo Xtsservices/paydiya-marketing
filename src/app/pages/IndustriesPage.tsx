@@ -248,7 +248,7 @@ export function IndustriesPage() {
           />
         </div>
 
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 text-center">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 text-left">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
@@ -271,12 +271,12 @@ export function IndustriesPage() {
               </span>
             </h1>
 
-            <p className="text-xl sm:text-2xl text-gray-600 max-w-3xl mx-auto mb-10 leading-relaxed">
+            <p className="text-xl sm:text-2xl text-gray-600 max-w-3xl mb-10 leading-relaxed">
               From retail to healthcare, restaurants to e-commerce. <br />
               <span className="font-semibold text-emerald-600">Industry-specific workflows built for your success.</span>
             </p>
 
-            <div className="flex flex-wrap justify-center gap-4 mb-8">
+            <div className="flex flex-wrap justify-start gap-4 mb-8">
               <motion.button
                 className="bg-gradient-to-r from-emerald-600 to-teal-600 text-white px-10 py-4 rounded-2xl font-bold text-lg shadow-xl hover:shadow-2xl inline-flex items-center gap-2"
                 whileHover={{ scale: 1.05, y: -2 }}

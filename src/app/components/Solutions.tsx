@@ -81,7 +81,7 @@ export function Solutions() {
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         <motion.div 
-          className="text-center mb-20"
+          className="text-left mb-20"
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
@@ -98,7 +98,7 @@ export function Solutions() {
           <h2 className="text-4xl sm:text-5xl lg:text-6xl font-extrabold mb-6 text-gray-900">
             Complete Payment <span className="bg-gradient-to-r from-emerald-600 to-teal-600 bg-clip-text text-transparent">Ecosystem</span>
           </h2>
-          <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+          <p className="text-xl text-gray-600 max-w-3xl">
             Everything you need to accept, manage, and grow your payment operations
           </p>
         </motion.div>
@@ -113,10 +113,10 @@ export function Solutions() {
               viewport={{ once: true, margin: "-100px" }}
               transition={{ duration: 0.8, delay: index * 0.2 }}
             >
-              <div className={`grid lg:grid-cols-2 gap-8 items-center ${index % 2 === 1 ? 'lg:grid-flow-dense' : ''}`}>
+              <div className={`grid lg:grid-cols-2 gap-8 lg:gap-12 xl:gap-20 items-center ${index % 2 === 1 ? 'lg:grid-flow-dense' : ''}`}>
                 {/* Content */}
                 <motion.div 
-                  className={`p-8 lg:p-12 ${index % 2 === 1 ? 'lg:col-start-2' : ''}`}
+                  className={`p-4 sm:p-6 lg:p-8 ${index % 2 === 1 ? 'lg:col-start-2' : ''}`}
                   whileHover={{ x: index % 2 === 1 ? -10 : 10 }}
                   transition={{ duration: 0.3 }}
                 >

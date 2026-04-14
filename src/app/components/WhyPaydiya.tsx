@@ -87,7 +87,7 @@ export function WhyPaydiya() {
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         <motion.div 
-          className="text-center mb-20"
+          className="text-left mb-20"
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
@@ -104,7 +104,7 @@ export function WhyPaydiya() {
           <h2 className="text-4xl sm:text-5xl lg:text-6xl font-extrabold mb-6">
             Why Businesses Choose <span className="text-yellow-300">Paydiya</span>
           </h2>
-          <p className="text-xl text-emerald-100 max-w-3xl mx-auto">
+          <p className="text-xl text-emerald-100 max-w-3xl">
             Built for growth, designed for simplicity, trusted by thousands
           </p>
         </motion.div>

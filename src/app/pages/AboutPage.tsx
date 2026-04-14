@@ -162,7 +162,7 @@ export function AboutPage() {
           />
         </div>
 
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 text-center">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 text-left">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
@@ -185,12 +185,12 @@ export function AboutPage() {
               </span>
             </h1>
 
-            <p className="text-lg sm:text-xl lg:text-2xl text-gray-600 max-w-3xl mx-auto mb-10 leading-relaxed px-4">
+            <p className="text-lg sm:text-xl lg:text-2xl text-gray-600 max-w-3xl mb-10 leading-relaxed">
               Founded in 2018, Paydiya has been on a mission to simplify digital payments. <br className="hidden sm:block" />
               <span className="font-semibold text-emerald-600">Every business deserves world-class payment technology.</span>
             </p>
 
-            <div className="flex flex-wrap justify-center gap-4 mb-8">
+            <div className="flex flex-wrap justify-start gap-4 mb-8">
               <motion.button
                 className="bg-gradient-to-r from-emerald-600 to-teal-600 text-white px-10 py-4 rounded-2xl font-bold text-lg shadow-xl hover:shadow-2xl inline-flex items-center gap-2"
                 whileHover={{ scale: 1.05, y: -2 }}
@@ -335,7 +335,7 @@ export function AboutPage() {
 
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
           <motion.div
-            className="text-center mb-16"
+            className="text-left mb-16"
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
@@ -353,7 +353,7 @@ export function AboutPage() {
             <h2 className="text-4xl sm:text-5xl font-extrabold mb-4 text-gray-900">
               Core <span className="bg-gradient-to-r from-emerald-600 to-teal-600 bg-clip-text text-transparent">Values</span>
             </h2>
-            <p className="text-xl text-gray-600 max-w-2xl mx-auto">
+            <p className="text-xl text-gray-600 max-w-2xl">
               The principles that guide everything we do
             </p>
           </motion.div>
