@@ -13,6 +13,6 @@ export default defineConfig({
 
   server: {
     host: true, // allow external access
-    allowedHosts: ['paydiya.in'], // ✅ FIX
+    allowedHosts: ['paydiya.in','www.paydiya.in'], // ✅ FIX
   }
 })
