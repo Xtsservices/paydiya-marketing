@@ -1,5 +1,5 @@
 import { motion } from 'motion/react';
-import { ShoppingBag, Heart, GraduationCap, Coffee, Warehouse, Briefcase } from 'lucide-react';
+import { ShoppingBag, Heart, GraduationCap, Coffee, Warehouse, Briefcase, Building2, Zap, Sparkles } from 'lucide-react';
 
 export function Industries() {
   const industries = [
@@ -11,20 +11,20 @@ export function Industries() {
     },
     { 
       icon: Heart, 
-      name: "Healthcare & Clinics",
-      color: "teal",
+      name: "Healthcare & Hospitals",
+      color: "rose",
       description: "Secure patient payments" 
     },
     { 
       icon: GraduationCap, 
       name: "Education & Institutions",
-      color: "emerald",
+      color: "blue",
       description: "Student fee management" 
     },
     { 
       icon: Coffee, 
-      name: "Restaurants & Cafés",
-      color: "yellow",
+      name: "Hospitality & Restaurants",
+      color: "amber",
       description: "Quick table payments" 
     },
     { 
@@ -35,9 +35,27 @@ export function Industries() {
     },
     { 
       icon: Briefcase, 
-      name: "Service Providers",
-      color: "emerald",
-      description: "Professional invoicing" 
+      name: "Enterprise Businesses",
+      color: "purple",
+      description: "Professional solutions" 
+    },
+    { 
+      icon: Building2, 
+      name: "Government & Public Sector",
+      color: "indigo",
+      description: "Governance platforms" 
+    },
+    { 
+      icon: Zap, 
+      name: "Energy Sector",
+      color: "yellow",
+      description: "Utility management" 
+    },
+    { 
+      icon: Sparkles, 
+      name: "Startups & SMBs",
+      color: "lime",
+      description: "Growth enablement" 
     }
   ];
 
@@ -94,7 +112,13 @@ export function Industries() {
                   className={`inline-flex items-center justify-center w-20 h-20 rounded-3xl mb-6 shadow-lg relative z-10 ${
                     industry.color === 'emerald' ? 'bg-emerald-500' :
                     industry.color === 'teal' ? 'bg-teal-500' :
-                    'bg-yellow-500'
+                    industry.color === 'rose' ? 'bg-rose-500' :
+                    industry.color === 'blue' ? 'bg-blue-500' :
+                    industry.color === 'amber' ? 'bg-amber-500' :
+                    industry.color === 'purple' ? 'bg-purple-500' :
+                    industry.color === 'indigo' ? 'bg-indigo-500' :
+                    industry.color === 'yellow' ? 'bg-yellow-500' :
+                    'bg-lime-500'
                   }`}
                   whileHover={{ 
                     scale: 1.1,

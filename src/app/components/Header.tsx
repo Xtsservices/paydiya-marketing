@@ -48,7 +48,7 @@ export function Header() {
   const navLinks = [
     { name: "About", hasDropdown: false, path: "/about" },
     { name: "Solutions", hasDropdown: true, path: null },
-    { name: "Pricing", hasDropdown: false, path: "/pricing" },
+    // { name: "Pricing", hasDropdown: false, path: "/pricing" },
     { name: "Industries", hasDropdown: false, path: "/industries" },
     { name: "Support", hasDropdown: false, path: "/support" }
   ];

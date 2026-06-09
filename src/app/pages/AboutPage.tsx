@@ -3,12 +3,12 @@ import { Target, Eye, Award, Users, TrendingUp, Shield, Zap, Globe, Heart, Rocke
 import { ImageWithFallback } from '../components/figma/ImageWithFallback';
 
 export function AboutPage() {
-  const stats = [
-    { number: "500K+", label: "Active Merchants", icon: Users, color: "emerald" },
-    { number: "₹50Cr+", label: "Daily Transactions", icon: TrendingUp, color: "teal" },
-    { number: "99.9%", label: "Uptime Guarantee", icon: Zap, color: "yellow" },
-    { number: "100+", label: "Cities Covered", icon: Globe, color: "emerald" }
-  ];
+  // const stats = [
+  //   { number: "500K+", label: "Active Merchants", icon: Users, color: "emerald" },
+  //   { number: "₹50Cr+", label: "Daily Transactions", icon: TrendingUp, color: "teal" },
+  //   { number: "99.9%", label: "Uptime Guarantee", icon: Zap, color: "yellow" },
+  //   { number: "100+", label: "Cities Covered", icon: Globe, color: "emerald" }
+  // ];
 
   const values = [
     {
@@ -212,7 +212,7 @@ export function AboutPage() {
       </section>
 
       {/* Stats Section */}
-      <section className="py-12 sm:py-16 bg-white relative">
+      {/* <section className="py-12 sm:py-16 bg-white relative">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-2 md:grid-cols-4 gap-4 sm:gap-6">
             {stats.map((stat, index) => (
@@ -244,7 +244,7 @@ export function AboutPage() {
             ))}
           </div>
         </div>
-      </section>
+      </section> */}
 
       {/* Mission & Vision */}
       <section className="py-16 sm:py-20 lg:py-28 bg-gradient-to-b from-white to-gray-50 relative overflow-hidden">
@@ -485,7 +485,7 @@ export function AboutPage() {
       </section>
 
       {/* Team Section */}
-      <section className="py-16 sm:py-20 lg:py-28 bg-gradient-to-b from-gray-50 to-white">
+      {/* <section className="py-16 sm:py-20 lg:py-28 bg-gradient-to-b from-gray-50 to-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <motion.div
             className="text-center mb-16"
@@ -549,7 +549,7 @@ export function AboutPage() {
             ))}
           </div>
         </div>
-      </section>
+      </section> */}
 
       {/* Awards & Recognition */}
       <section className="py-16 sm:py-20 lg:py-28 bg-gradient-to-br from-emerald-50 via-white to-teal-50/30 relative overflow-hidden">

@@ -42,32 +42,31 @@ export function Footer() {
             </div>
             
             <p className="text-gray-400 mb-4 sm:mb-6 leading-relaxed text-sm sm:text-base">
-              Paydiya is a digital payments company providing secure, fast, and reliable payment 
-              solutions for businesses across India.
+              Paydiya Fintech Solutions is a technology-driven organization delivering enterprise software, digital payment infrastructure, government technology platforms, and business transformation solutions.
             </p>
 
             {/* Contact Info */}
             <div className="space-y-2 sm:space-y-3 mb-6 sm:mb-8">
               <motion.a 
-                href="mailto:support@paydiya.com" 
+                href="mailto:info@paydiya.in" 
                 className="flex items-center gap-3 text-gray-400 hover:text-emerald-400 transition-colors group"
                 whileHover={{ x: 5 }}
               >
                 <div className="w-8 h-8 sm:w-10 sm:h-10 rounded-lg bg-gray-800 flex items-center justify-center group-hover:bg-emerald-600 transition-colors flex-shrink-0">
                   <Mail className="w-4 h-4 sm:w-5 sm:h-5" />
                 </div>
-                <span className="text-xs sm:text-sm">support@paydiya.com</span>
+                <span className="text-xs sm:text-sm">info@paydiya.in</span>
               </motion.a>
 
               <motion.a 
-                href="tel:+91XXXXXXXXXX" 
+                href="tel:+919876543210" 
                 className="flex items-center gap-3 text-gray-400 hover:text-emerald-400 transition-colors group"
                 whileHover={{ x: 5 }}
               >
                 <div className="w-8 h-8 sm:w-10 sm:h-10 rounded-lg bg-gray-800 flex items-center justify-center group-hover:bg-emerald-600 transition-colors flex-shrink-0">
                   <Phone className="w-4 h-4 sm:w-5 sm:h-5" />
                 </div>
-                <span className="text-xs sm:text-sm">+91 XXXXX XXXXX</span>
+                <span className="text-xs sm:text-sm">+91 9885012009</span>
               </motion.a>
 
               <motion.div 
@@ -77,7 +76,7 @@ export function Footer() {
                 <div className="w-8 h-8 sm:w-10 sm:h-10 rounded-lg bg-gray-800 flex items-center justify-center group-hover:bg-emerald-600 transition-colors flex-shrink-0">
                   <MapPin className="w-4 h-4 sm:w-5 sm:h-5" />
                 </div>
-                <span className="text-xs sm:text-sm">Mumbai, Maharashtra<br/>India</span>
+                <span className="text-xs sm:text-sm">Paydiya Fintech Solutions<br/>Private Limited<br/>India</span>
               </motion.div>
             </div>
 

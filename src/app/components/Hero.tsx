@@ -124,10 +124,10 @@ export function Hero() {
               transition={{ duration: 0.8, delay: 0.2 }}
             >
               <span className="bg-gradient-to-r from-emerald-600 via-teal-600 to-emerald-700 bg-clip-text text-transparent">
-                Accept Payments.
+                Building Digital Infrastructure
               </span>
               <br />
-              <span className="text-gray-900">Anywhere. Anytime.</span>
+              <span className="text-gray-900">for Businesses, Banks & Governments</span>
             </motion.h1>
 
             <motion.p 
@@ -136,9 +136,7 @@ export function Hero() {
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8, delay: 0.4 }}
             >
-              All-in-one payment solutions including <span className="font-semibold text-emerald-600">Payment Gateway</span>, 
-              <span className="font-semibold text-emerald-600"> POS Machines</span>, and 
-              <span className="font-semibold text-emerald-600"> UPI Sound Box</span> — built for Indian businesses.
+              Paydiya Fintech Solutions is a technology-driven organization delivering enterprise software, digital payment infrastructure, government technology platforms, and business transformation solutions that help organizations innovate, scale, and succeed in a digital-first world.
             </motion.p>
 
             <motion.div 
