@@ -215,12 +215,12 @@ export function IndustriesPage() {
     }
   ];
 
-  const globalStats = [
-    { value: "200K+", label: "Active Merchants", icon: Users, color: "emerald" },
-    { value: "50M+", label: "Monthly Transactions", icon: BarChart3, color: "teal" },
-    { value: "99.9%", label: "Uptime Guarantee", icon: Shield, color: "yellow" },
-    { value: "12+", label: "Industries Served", icon: Building2, color: "emerald" }
-  ];
+  // const globalStats = [
+  //   { value: "200K+", label: "Active Merchants", icon: Users, color: "emerald" },
+  //   { value: "50M+", label: "Monthly Transactions", icon: BarChart3, color: "teal" },
+  //   { value: "99.9%", label: "Uptime Guarantee", icon: Shield, color: "yellow" },
+  //   { value: "12+", label: "Industries Served", icon: Building2, color: "emerald" }
+  // ];
 
   return (
     <div className="min-h-screen bg-white">
@@ -298,7 +298,7 @@ export function IndustriesPage() {
       </section>
 
       {/* Global Stats */}
-      <section className="py-12 sm:py-16 bg-white relative">
+      {/* <section className="py-12 sm:py-16 bg-white relative">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
             {globalStats.map((stat, index) => (
@@ -330,7 +330,7 @@ export function IndustriesPage() {
             ))}
           </div>
         </div>
-      </section>
+      </section> */}
 
       {/* Industries Grid */}
       <section className="py-16 sm:py-20 lg:py-28 bg-gradient-to-b from-white to-gray-50 relative overflow-hidden">
