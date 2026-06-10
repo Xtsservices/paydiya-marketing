@@ -1,20 +1,30 @@
 import { motion } from 'motion/react';
+import AxisLogo from '../../assets/Axis.jpg';
+import AULogo from '../../assets/au-small-finance-b--600.png';
+import UjjivanLogo from '../../assets/ujjivan.png';
+import CSBLogo from '../../assets/csb.png';
+import ICICILogo from '../../assets/images.jpeg';
+import CashfreeLogo from '../../assets/cashfree.png';
+import RazorpayLogo from '../../assets/Razorpay.png';
+import PineLabsLogo from '../../assets/pine-labs.jpg';
+import WorldlineLogo from '../../assets/Worldline.png';
+import Msg91Logo from '../../assets/Msg91.png';
 
 export function Partners() {
   const bankPartners = [
-    { name: "Axis Bank", logo: "AB" },
-    { name: "AU Small Finance Bank", logo: "AU" },
-    { name: "Ujjivan Small Finance Bank", logo: "UB" },
-    { name: "ICICI Bank", logo: "IC" },
-    { name: "CSB Bank", logo: "CB" },
+    { name: "Axis Bank", logo: AxisLogo },
+    { name: "AU Small Finance Bank", logo: AULogo },
+    { name: "Ujjivan Small Finance Bank", logo: UjjivanLogo },
+    { name: "ICICI Bank", logo: ICICILogo },
+    { name: "CSB Bank", logo: CSBLogo },
   ];
 
   const techPartners = [
-    { name: "Cashfree", logo: "CF" },
-    { name: "Razorpay", logo: "RP" },
-    { name: "Pine Labs", logo: "PL" },
-    { name: "Worldline", logo: "WL" },
-    { name: "MSG91", logo: "MG" },
+    { name: "Cashfree", logo: CashfreeLogo },
+    { name: "Razorpay", logo: RazorpayLogo },
+    { name: "Pine Labs", logo: PineLabsLogo },
+    { name: "Worldline", logo: WorldlineLogo },
+    { name: "MSG91", logo: Msg91Logo },
   ];
 
   return (
@@ -76,13 +86,17 @@ export function Partners() {
                 transition={{ duration: 0.4, delay: index * 0.1 }}
                 whileHover={{ y: -5, boxShadow: "0 20px 40px rgba(16, 185, 129, 0.1)" }}
               >
-                <div className="text-center">
+                <div className="text-center w-full">
                   <motion.div
-                    className="w-14 h-14 rounded-xl bg-gradient-to-br from-emerald-500 to-teal-600 flex items-center justify-center mx-auto mb-3 shadow-lg"
-                    whileHover={{ scale: 1.1, rotate: [0, -5, 5, -5, 0] }}
-                    transition={{ duration: 0.5 }}
+                    className="flex items-center justify-center mb-3 h-16"
+                    whileHover={{ scale: 1.1 }}
+                    transition={{ duration: 0.3 }}
                   >
-                    <span className="text-white font-bold text-sm">{partner.logo}</span>
+                    <img 
+                      src={partner.logo} 
+                      alt={partner.name}
+                      className="max-h-full max-w-full object-contain"
+                    />
                   </motion.div>
                   <p className="text-sm font-semibold text-gray-900 group-hover:text-emerald-600 transition-colors">{partner.name}</p>
                 </div>
@@ -110,13 +124,17 @@ export function Partners() {
                 transition={{ duration: 0.4, delay: index * 0.1 }}
                 whileHover={{ y: -5, boxShadow: "0 20px 40px rgba(16, 185, 129, 0.1)" }}
               >
-                <div className="text-center">
+                <div className="text-center w-full">
                   <motion.div
-                    className="w-14 h-14 rounded-xl bg-gradient-to-br from-yellow-500 to-amber-600 flex items-center justify-center mx-auto mb-3 shadow-lg"
-                    whileHover={{ scale: 1.1, rotate: [0, -5, 5, -5, 0] }}
-                    transition={{ duration: 0.5 }}
+                    className="flex items-center justify-center mb-3 h-16"
+                    whileHover={{ scale: 1.1 }}
+                    transition={{ duration: 0.3 }}
                   >
-                    <span className="text-white font-bold text-sm">{partner.logo}</span>
+                    <img 
+                      src={partner.logo} 
+                      alt={partner.name}
+                      className="max-h-full max-w-full object-contain"
+                    />
                   </motion.div>
                   <p className="text-sm font-semibold text-gray-900 group-hover:text-emerald-600 transition-colors">{partner.name}</p>
                 </div>
